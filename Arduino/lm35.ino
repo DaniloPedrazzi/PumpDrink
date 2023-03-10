@@ -10,8 +10,8 @@ void loop()
 {
   leitura_lm35 = analogRead(lm35_pin);
   temperatura = leitura_lm35 * (5.0/1023) * 100;
-  Serial.println("Temperatura: ");
-  Serial.print(temperatura);
+  Serial.print("Temperatura: ");
+  Serial.println(temperatura);
   
   delay(1000);
 }
